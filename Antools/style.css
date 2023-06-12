@@ -115,6 +115,7 @@ body {
 .header {
     background: url("./assets/img/header-bg.png") no-repeat right ;
     background-size: auto 100%;
+    margin-bottom: 200px;
 }
 
 .header-content {
@@ -194,3 +195,103 @@ body {
 .social-link img{
     background: transparent;
 }
+
+
+.section-1 {
+
+}
+
+.section-1-text {
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.section-1-title {
+    font-size: 48px;
+    color: #FFFFFFE5;
+    margin-bottom: 25px;
+}
+
+.section-1-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF8C;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    padding: 33px;
+    border-radius: 15px;
+    color: #FFFFFFC7;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    width: 65px;
+    height: 65px;
+}
+
+.card-name {
+    font-size: 24px;
+}
+
+.card-pay {
+    color: #FFA5378C;
+}
+
+.card-description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color:#FFFFFF8C;
+}
+
+.card-reaction, .card-reaction > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-like, .card-folder {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.card-like:hover, .card-folder:hover, .card-visit:hover {
+    background: #283036;
+    box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+    transition: 0.2s ease-in-out;
+
+}
+
+
+.card-visit {
+    background-color: transparent;
+    font-size: 16px;
+    color: #FFFFFF8C;
+    cursor: pointer;
+    padding: 9px 35px;
+    border: 0;
+    border-radius: 8px;
+}
+
