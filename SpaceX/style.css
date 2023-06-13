@@ -35,11 +35,44 @@ body {
 .nav_link_mid, .nav_link_right {
     text-decoration: none;
     margin: 0 10px;
+    transition: font-size 0.1s linear;
+    position: relative;
 }
 
 .nav_link_mid {
     color: white;
 }
+
+.nav_link_mid:after {
+    background-color: white;
+}
+
+.nav_link_right:after {
+    background-color: #808080;
+}
+
+.nav_link_mid:after, .nav_link_right:after {
+    content: "";
+    display: block;
+    height: 2px;
+    top: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    border-radius: 4px;
+    transition: opacity 0.1s linear;
+}
+
+.nav_link_mid:hover {
+    font-size: 15px;
+}
+
+.nav_link_mid:hover:after, .nav_link_right:hover:after {
+    opacity: 1;
+}
+
 
 .nav_link_right {
     color: #808080;
@@ -64,9 +97,12 @@ body {
 }
 
 .subtitle_main {
+    height: 44px;
+    width: 286px;
     margin-top: 26px;
     font-weight: 300;
     font-size: 16px;
+    display: inline-block;
 }
 
 .line {
@@ -110,6 +146,8 @@ body {
     font-size: 16px;
     line-height: 32px;
     display: flex;
+    height: 195px;
+    width: 490px;
 }
 
 .subtitle_2_left {
@@ -143,6 +181,26 @@ body {
     color: white;
     font-size: 18px;
     margin: 0 10px;
+    position: relative;
+}
+
+.nav_link_footer:after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 2px;
+    top: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    border-radius: 4px;
+    transition: opacity 0.1s linear;
+}
+
+.nav_link_footer:hover:after {
+    opacity: 1;
 }
 
 .email {
@@ -151,17 +209,22 @@ body {
 }
 
 .button_footer {
-    height: 60px;
-    width: 260px;
+    padding: 20px 85px;
     color: white;
     background-color: black;
     border-radius: 6px;
     border: 2px solid white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.2s linear;
+    transition: background-color 0.2s linear, color 0.2s linear;
 }
 
-.button_footer_content {
-    font-size: 18px;
+.button_footer:hover {
+    background-color: white;
+    color: black;
 }
+
 
 .email {
     margin-top: 44px;
@@ -177,4 +240,5 @@ body {
 
 .footer_inner {
     margin-top: 192px;
+    margin-bottom: 130px;
 }
