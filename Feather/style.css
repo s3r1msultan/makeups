@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
     font-weight: 400;
+    background-color: #FBF8F5;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
 
 .delivery_button {
 	border: 2px solid #E9672B;
-	background-color: white;
+	background-color: #FBF8F5;
 	padding: 10px 20px;
 	border-radius: 20px;
 	font-size: 16px;
@@ -73,11 +74,16 @@ body {
 /* Block 1 */
 
 .block_1_content .title {
-	font-size: 64px
+	font-size: 64px;
+	margin-top: 100px;
 }
 
 .block_1_content .subtitle {
 	font-size: 18px;
+	margin-top: 18px;
+	height: 112px;
+	width: 524px;
+	line-height: 28px;
 }
 
 .block_1_inner {
@@ -88,3 +94,109 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+.get_started_button {
+	margin-top: 45px;
+	padding: 16px 32px;
+	background-color: #E9672B;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.1s linear;
+}
+
+.get_started_button:hover {
+	background-color: #D45B24;
+}
+
+/* Block_2 */
+
+.block_2_inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.block_2_inner .title {
+	font-size: 48px;
+}
+
+.boxes {
+	width: 100%;
+	margin-top: 44px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box1, .box2, .box3, .box4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid;
+	height: 255px;
+	top: 0;
+	position: relative;
+	transition: top 0.2s linear;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+	top: -20px;
+}
+
+.box1 {
+	border-color: #E9672B;
+	box-shadow: 8px 8px 0px #CBC6F4;
+}
+
+.box2 {
+	border-color: #225DCA;
+	box-shadow: 8px 8px 0px #E7CB43;
+}
+
+.box3 {
+	border-color: #242947;
+	box-shadow: 8px 8px 0px #A2D4C5;
+}
+
+.box4 {
+	border-color: #DE4333;
+	box-shadow: 8px 8px 0px #AF4920;
+}
+
+.text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+/* Block_3 */
+
+#block_3 {
+	background-color: white;
+	margin-top: 70px;
+}
+
+.block_3_inner {
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.block_3_inner .title {
+	font-size: 36px;
+}
+
+.block_3_inner .subtitle {
+	font-size: 24px;
+	line-height: 32px;
+	height: 96px;
+	width: 892px;
+	margin-top: 16px;
+}
+
+/* Block_4 */
+
